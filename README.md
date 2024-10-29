@@ -1,3 +1,4 @@
+
 # Discord Bot with Flask API Integration
 
 ## Overview
@@ -6,7 +7,7 @@ This project integrates a **Discord Bot** with a **Flask API** to track messages
 The integration aims to make it easy to log and interact with incoming messages through an external service, allowing for custom responses, data processing, or any further handling by the Flask backend.
 
 ## Features
-- The Discord bot listens for messages in the server and takes the following actions:
+- **Message Tracking and Replying**: The Discord bot listens for messages in the server and takes the following actions:
   - Replies to specific keywords (e.g., "helloworld", "ขอบคุณ", etc.).
   - Captures metadata of every message, including:
     - Author profile picture.
@@ -16,10 +17,12 @@ The integration aims to make it easy to log and interact with incoming messages 
     - Attachments (files, images, etc.).
   - Sends the captured data to a Flask server via a POST request.
 
+- **WebSocket Support**: Real-time data emission to WebSocket clients when a new message is posted.
+
 ## Prerequisites
 - Python 3.x
 - Discord bot token
-- Flask
+- Flask and Flask-SocketIO
 - A `.env` file to store the bot token securely
 - Required Python packages listed in `requirements.txt`
 
@@ -61,6 +64,7 @@ This command will:
 ## Endpoint Details
 - **`/api/last_message` [POST]**: Receives the latest message details from the Discord bot.
   - Data sent includes message content, message ID, profile picture of the author, server info, and any attachments.
+  - Emits real-time data to WebSocket clients via `new_message` event.
 - **`/api/last_message` [GET]**: Returns the latest captured message details.
 
 ## Example Data Sent
@@ -105,4 +109,8 @@ Feel free to open an issue or submit a pull request if you have suggestions for 
 
 ## License
 This project is licensed under the MIT License.
+
+---
+
+[![Webhook Usage on Discord](https://img.youtube.com/vi/nVQ-baDmoTg/0.jpg)](https://www.youtube.com/watch?v=nVQ-baDmoTg)
 

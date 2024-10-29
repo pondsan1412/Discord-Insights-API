@@ -67,8 +67,10 @@ class event_messages(commands.Cog):
                 "server_id": str(message.guild.id) if message.guild else None,
                 "server_name": message.guild.name if message.guild else None,
                 "server_profile_picture": str(message.guild.icon.url) if message.guild else None,
-                "attachments": attachments
+                "attachments": attachments,
+                "author_name": message.author.name  # เพิ่ม author_name
             }
+
 
             response = requests.post(self.api_url, headers=headers, json=payload)
             if response.status_code != 200:
