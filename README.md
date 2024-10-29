@@ -6,6 +6,8 @@ This project integrates a **Discord Bot** with a **Flask API** to track messages
 
 The integration aims to make it easy to log and interact with incoming messages through an external service, allowing for custom responses, data processing, or any further handling by the Flask backend.
 
+[![Webhook Usage on Discord](https://img.youtube.com/vi/nVQ-baDmoTg/0.jpg)](https://www.youtube.com/watch?v=nVQ-baDmoTg)
+
 ## Features
 - **Message Tracking and Replying**: The Discord bot listens for messages in the server and takes the following actions:
   - Replies to specific keywords (e.g., "helloworld", "ขอบคุณ", etc.).
@@ -112,5 +114,4 @@ This project is licensed under the MIT License.
 
 ---
 
-[![Webhook Usage on Discord](https://img.youtube.com/vi/nVQ-baDmoTg/0.jpg)](https://www.youtube.com/watch?v=nVQ-baDmoTg)
 
