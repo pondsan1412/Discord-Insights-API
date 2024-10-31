@@ -5,7 +5,9 @@
 This project integrates a **Discord Bot** with a **Flask API** to track messages in Discord channels. When a new message is posted in a Discord server that the bot has access to, the message content, along with metadata such as user profile picture, server information, and attachments, is sent to an endpoint exposed by the Flask server.
 
 The integration aims to make it easy to log and interact with incoming messages through an external service, allowing for custom responses, data processing, or any further handling by the Flask backend.
+![image](https://github.com/user-attachments/assets/4dfdc295-705c-4bd0-9379-9088a003c660)
 
+Click to watch video on youtube
 [![Webhook Usage on Discord](https://img.youtube.com/vi/nVQ-baDmoTg/0.jpg)](https://www.youtube.com/watch?v=nVQ-baDmoTg)
 
 ## Features
